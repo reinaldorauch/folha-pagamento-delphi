@@ -17,6 +17,8 @@ type
     ActionList: TActionList;
     ImageList: TImageList;
     PopupMenu: TPopupMenu;
+    Adicionar: TAction;
+    procedure AdicionarExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,5 +31,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFormPrin.AdicionarExecute(Sender: TObject);
+begin
+  // TFormFunc.Create();
+end;
 
 end.

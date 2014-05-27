@@ -64,6 +64,10 @@ object FormPrin: TFormPrin
     Images = ImageList
     Left = 448
     Top = 416
+    object Adicionar: TAction
+      Caption = 'AcAddFunc'
+      OnExecute = AdicionarExecute
+    end
   end
   object ImageList: TImageList
     Left = 384
