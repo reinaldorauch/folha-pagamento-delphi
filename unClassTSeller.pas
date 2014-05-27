@@ -6,7 +6,8 @@ uses
   unClassTFunc;
 
 Type
-  ENegativeSells = class(EFuncError);
+  ESellerError = class(EFuncError);
+  ENegativeSells = class(ESellerError);
 
   TSeller = class(TFunc)
   private
