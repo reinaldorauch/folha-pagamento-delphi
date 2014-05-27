@@ -17,9 +17,9 @@ Type
   protected
     fNome: String;
     fSalario: Double;
-    procedure Create (cNome: String; cSal: Double);
-    overload; procedure Create;
-    function salarioTotal: double; abstract;
+    procedure Create (cNome: String; cSal: Double); overload;
+    procedure Create; overload;
+    function salarioTotal: double; virtual; abstract;
   public
     property Nome: String read fNome write SetNome;
     property Salario: Double read fSalario write SetSalario;
@@ -54,7 +54,7 @@ end;
 
 procedure TFunc.SetSalario(const Value: Double);
 begin
-  if((Value <> fSalario) OR (Value) >= 0) then
+  if((Value <> fSalario) OR (Value >= 0)) then
     fSalario := Value
   else
     if Value < 0 then
