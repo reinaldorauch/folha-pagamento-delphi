@@ -17,7 +17,7 @@ object FormPrin: TFormPrin
     510)
   PixelsPerInch = 96
   TextHeight = 13
-  object ListView1: TListView
+  object LvFolha: TListView
     Left = 8
     Top = 35
     Width = 589
@@ -42,17 +42,36 @@ object FormPrin: TFormPrin
     Top = 0
     Width = 605
     Height = 29
+    ButtonWidth = 67
     Caption = 'ToolBar'
+    Images = ImageList
+    ShowCaptions = True
     TabOrder = 1
+    Transparent = True
   end
   object MainMenu: TMainMenu
-    Left = 296
-    Top = 264
+    Images = ImageList
+    Left = 512
+    Top = 416
     object Funcionrios1: TMenuItem
       Caption = 'Funcion'#225'rios'
       object Adicionar1: TMenuItem
         Caption = 'Adicionar'
       end
     end
+  end
+  object ActionList: TActionList
+    Images = ImageList
+    Left = 448
+    Top = 416
+  end
+  object ImageList: TImageList
+    Left = 384
+    Top = 416
+  end
+  object PopupMenu: TPopupMenu
+    Images = ImageList
+    Left = 312
+    Top = 416
   end
 end
