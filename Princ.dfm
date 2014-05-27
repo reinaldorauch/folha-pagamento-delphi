@@ -12,17 +12,30 @@ object FormPrin: TFormPrin
   Font.Style = []
   Menu = MainMenu
   OldCreateOrder = False
+  DesignSize = (
+    605
+    510)
   PixelsPerInch = 96
   TextHeight = 13
   object ListView1: TListView
     Left = 8
     Top = 35
-    Width = 593
+    Width = 589
     Height = 467
-    Columns = <>
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Columns = <
+      item
+        Caption = '#'
+      end
+      item
+        Caption = 'Nome'
+      end
+      item
+        Caption = 'Sal'#225'rio'
+      end>
     GridLines = True
     TabOrder = 0
-    ViewStyle = vsList
+    ViewStyle = vsReport
   end
   object ToolBar: TToolBar
     Left = 0
@@ -31,9 +44,6 @@ object FormPrin: TFormPrin
     Height = 29
     Caption = 'ToolBar'
     TabOrder = 1
-    ExplicitLeft = 232
-    ExplicitTop = 272
-    ExplicitWidth = 150
   end
   object MainMenu: TMainMenu
     Left = 296

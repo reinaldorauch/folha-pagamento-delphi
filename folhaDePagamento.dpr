@@ -4,7 +4,9 @@ uses
   Vcl.Forms,
   Princ in 'Princ.pas' {FormPrin},
   unClassTFunc in 'unClassTFunc.pas',
-  unClassTAdm in 'unClassTAdm.pas';
+  unClassTAdm in 'unClassTAdm.pas',
+  unClassTSeller in 'unClassTSeller.pas',
+  unClassTManager in 'unClassTManager.pas';
 
 {$R *.res}
 
