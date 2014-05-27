@@ -33,6 +33,7 @@ implementation
 procedure TFunc.Create(cNome: String; cSal: Double);
 begin
   Nome := cNome;
+  Salario := cSal;
 end;
 
 procedure TFunc.SetNome(const Value: String);
