@@ -3,7 +3,7 @@ unit unClassTManager;
 interface
 
 uses
-  unClassTFunc;
+  unClassTFunc, SysUtils;
 
 Type
   EManagerError = class(EFuncError);
@@ -49,7 +49,7 @@ begin
     fBonus := Value
   else
     if Value < 0 then
-      raise ENegativeBonus.Create('O Bônus de ' + Value + ' é inválido, não pode ser negativo');
+      raise ENegativeBonus.Create('O Bônus de ' + FloatToStr(Value) + ' é inválido, não pode ser negativo');
 end;
 
 end.
