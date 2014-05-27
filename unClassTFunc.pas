@@ -17,9 +17,9 @@ Type
   protected
     fNome: String;
     fSalario: Double;
-    procedure Create (cNome: String; cSal: Double); overload;
-    procedure Create; overload;
-    function salarioTotal: double; virtual; abstract;
+    constructor Create (cNome: String; cSal: Double); overload; virtual;
+    constructor Create; overload; virtual;
+    function SalarioTotal: double; virtual; abstract;
   public
     property Nome: String read fNome write SetNome;
     property Salario: Double read fSalario write SetSalario;
@@ -31,16 +31,16 @@ implementation
 
 { TFunc }
 
-procedure TFunc.Create(cNome: String; cSal: Double);
+constructor TFunc.Create(cNome: String; cSal: Double);
 begin
   Nome := cNome;
   Salario := cSal;
 end;
 
-procedure TFunc.Create;
+constructor TFunc.Create;
 begin
-  Nome := 'Josnei';
-  Salario := 0;
+   Nome := 'Josnei';
+    Salario := 0;
 end;
 
 procedure TFunc.SetNome(const Value: String);
