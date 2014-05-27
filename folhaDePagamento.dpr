@@ -6,7 +6,8 @@ uses
   unClassTFunc in 'unClassTFunc.pas',
   unClassTAdm in 'unClassTAdm.pas',
   unClassTSeller in 'unClassTSeller.pas',
-  unClassTManager in 'unClassTManager.pas';
+  unClassTManager in 'unClassTManager.pas',
+  FormFunc in 'FormFunc.pas' {FmFunc};
 
 {$R *.res}
 
